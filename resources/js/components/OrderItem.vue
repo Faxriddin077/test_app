@@ -1,8 +1,8 @@
 <template>
     <div class="form_content-info-input">
-        <input type="text" v-model="item.name" placeholder="Наименование продукта">
-        <input type="number" v-model="item.quantity" placeholder="Количество шт">
-        <input type="number" v-model="item.price" placeholder="Стоимость продукта">
+        <input type="text" v-model="item.name" placeholder="Наименование продукта" required>
+        <input type="number" v-model="item.quantity" placeholder="Количество шт" required>
+        <input type="number" v-model="item.price" placeholder="Стоимость продукта" required>
         <button class="delete" @click="removeItem"><i class="fa-solid fa-trash"></i></button>
     </div>
 </template>
