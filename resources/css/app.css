@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+
+}
+
+.wrapper {
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+.btns {
+    display: flex;
+    gap: 5px;
+}
+
+.btns button {
+    font-size: 14px;
+    color: cornflowerblue;
+    border: #333 1px solid;
+    padding: 10px 20px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btns button:focus{
+    background-color: rgb(56, 130, 190);
+    color: #fff;
+}
+.form_text {
+    background-color: rgb(134, 53, 134);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form_start {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0px 0px 30px 0;
+}
+
+.form_btns button {
+    padding: 10px;
+    color: #fff;
+}
+
+.btn1 {
+    background-color: #333;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: forestgreen;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.form_btns {
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    align-items: flex-end;
+}
+.form_content-info{
+    padding: 20px 20px 70px 20px;
+}
+.forn_content-info-text{
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 23%;
+    margin-left: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+.form_content-text{
+    margin-top: 30px;
+    background-color: rgb(56, 130, 190);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+.form_content-start{
+    margin: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form_content-info-input{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.form_content-info-input input{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.delete{
+    padding: 13px;
+    background-color: darkred   ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+.add_element{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.element{
+    padding: 10px;
+    background: blue;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.error_box{
+    background-color: rgb(201, 56, 56);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+.error_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}

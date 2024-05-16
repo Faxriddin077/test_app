@@ -1,0 +1,39 @@
+services:
+  # Nginx Service
+  nginx:
+    image: nginx:alpine
+    container_name: nginx_test
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/log:/var/log
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - app-network
+
+  # PHP Service
+  app:
+    container_name: php_test
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www
+    networks:
+      - app-network
+    depends_on:
+      - nginx`
+
+networks:
+  app-network:
+    name: "app-network"
+    driver: bridge
+
+volumes:
+  app-mysql:
+    name: "app-mysql"
+    driver: local
